@@ -1,0 +1,9 @@
+BENCHMARK: Sorting an array of 4096 shuffled integers
+
+algorithm      user       system     total    real
+-------------------------------------------------------
+Countsort      0.010000   0.000000   0.010000 (  0.006620)
+Radix LSD      0.020000   0.000000   0.020000 (  0.024639)
+Quicksort      0.020000   0.010000   0.030000 (  0.028985)
+Heapsort       0.150000   0.000000   0.150000 (  0.150079)
+Gravsort       3.220000   0.140000   3.360000 (  3.368467)

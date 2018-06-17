@@ -24,7 +24,7 @@ qs_input = (0..10).to_a.shuffle
 
 puts "INPUT ARRAY: #{qs_input.inspect}"
 
-qs_output = quicksort qs_input
+qs_output = quicksort(qs_input)
 # apply quicksort
 
 puts "OUTPUT ARRAY: #{qs_output.inspect}"
