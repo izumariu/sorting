@@ -33,7 +33,7 @@ def radix_lsd(arr)
 
 end
 
-rds_input = [10,15,1,60,5,100,25,50].to_a.shuffle
+rds_input = (0..100).to_a.shuffle
 puts "RADIX LSD INPUT: #{rds_input.inspect}"
 
 rds_output= radix_lsd rds_input
