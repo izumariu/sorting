@@ -1,12 +1,12 @@
-def quicksort(arr, depth=0)
+def quicksort(arr)
 
   arr.length >= 2 || (return arr)
 
   pivot = arr.delete_at rand arr.length
   arr_qs = arr.partition{|i| i < pivot }
   arr_qs.insert(1, [pivot])
-  arr_qs[0] = quicksort arr_qs[0], depth+1
-  arr_qs[2] = quicksort arr_qs[2], depth+1
+  arr_qs[0] = quicksort arr_qs[0]
+  arr_qs[2] = quicksort arr_qs[2]
 
   return arr_qs.flatten
 
